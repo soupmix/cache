@@ -2,14 +2,14 @@
 checks:
   php: true
 build:
+  services:
+    redis: latest
+    memcached: latest
   nodes:
     analysis:
       tests:
         override:
           - php-scrutinizer-run
-  services:
-    redis: latest
-    memcached: latest
   environment:
     php:
       version: 7.3
