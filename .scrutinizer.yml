@@ -2,9 +2,6 @@
 checks:
   php: true
 build:
-  services:
-    redis: latest
-    memcached: latest
   nodes:
     analysis:
       tests:
