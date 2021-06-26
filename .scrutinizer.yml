@@ -11,6 +11,8 @@ build:
         override:
           - php-scrutinizer-run
   environment:
+    memcached: true
+    redis: true
     php:
       version: 7.3
       pecl_extensions:
