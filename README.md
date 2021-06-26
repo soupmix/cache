@@ -1,4 +1,6 @@
-## Soupmix Cache API
+## Soupmix SimpleCache API
+
+[![Build Status](https://scrutinizer-ci.com/g/soupmix/cache/badges/build.png?b=main)](https://scrutinizer-ci.com/g/soupmix/cache/build-status/main) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/soupmix/cache/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/soupmix/cache/?branch=main) [![Code Coverage](https://scrutinizer-ci.com/g/soupmix/cache/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/soupmix/cache/?branch=main)
 
 Soupmix Cache provides framework-agnostic implementation of [PSR-16 Simple Cache Interface](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-16-simple-cache.md). 
 

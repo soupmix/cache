@@ -18,14 +18,14 @@ build:
         - memcached
         - apcu
       ini:
-        apc.enable_cli: "1"
-
+        apc.enable: 1
+        apc.enable_cli: 1
   tests:
     override:
       -
-        command: 'vendor/bin/phpunit --coverage-clover=.soupmix_coverage'
+        command: 'vendor/bin/phpunit --coverage-clover=.soupmix_coverage.xml'
         coverage:
-          file: '.soupmix_coverage'
+          file: '.soupmix_coverage.xml'
           format: 'clover'
 filter:
   excluded_paths:
