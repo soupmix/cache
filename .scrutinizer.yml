@@ -19,7 +19,7 @@ build:
         apc.enable_cli: "1"
   services:
     redis: 5
-    memcahced: 1.6
+    memcached: 1.6
   tests:
     override:
       -
