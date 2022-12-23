@@ -11,7 +11,7 @@ build:
     memcached: true
     redis: true
     php:
-      version: 7.3
+      version: 8.1
       pecl_extensions:
         - igbinary
         - redis
@@ -20,12 +20,13 @@ build:
       ini:
         apc.enable: 1
         apc.enable_cli: 1
+        xdebug.mode: 'coverage'
   tests:
     override:
       -
-        command: 'vendor/bin/phpunit --coverage-clover=.soupmix_coverage.xml'
+        command: 'XDEBUG_MODE=coverage vendor/bin/phpunit c phpunit.xml.dist'
         coverage:
-          file: '.soupmix_coverage.xml'
+          file: 'clover.xml'
           format: 'clover'
 filter:
   excluded_paths:

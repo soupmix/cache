@@ -10,6 +10,7 @@
         <ini name="memory_limit" value="-1"/>
         <ini name="apc.enable" value="1"/>
         <ini name="apc.enable_cli" value="1"/>
+        <ini name="xdebug.mode" value="coverage"/>
     </php>
 
     <testsuites>
@@ -27,6 +28,9 @@
         <include>
             <directory suffix=".php">src/</directory>
         </include>
+        <report>
+            <clover outputFile="clover.xml"/>
+        </report>
     </coverage>
 
 </phpunit>
