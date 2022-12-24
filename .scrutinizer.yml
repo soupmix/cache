@@ -24,7 +24,7 @@ build:
   tests:
     override:
       -
-        command: 'XDEBUG_MODE=coverage vendor/bin/phpunit c phpunit.xml.dist'
+        command: 'vendor/bin/phpunit c phpunit.xml.dist'
         coverage:
           file: 'clover.xml'
           format: 'clover'
